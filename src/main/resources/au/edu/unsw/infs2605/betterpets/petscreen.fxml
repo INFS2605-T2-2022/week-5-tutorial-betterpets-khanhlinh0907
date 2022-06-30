@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="au.edu.unsw.infs2605.betterpets.PetTableController">
+   <children>
+      <TableView fx:id="petTbl" layoutX="27.0" layoutY="122.0" prefHeight="251.0" prefWidth="547.0">
+        <columns>
+          <TableColumn fx:id="nameCol" prefWidth="137.0" text="Name" />
+          <TableColumn fx:id="speciesCol" prefWidth="137.0" text="Species" />
+          <TableColumn fx:id="colourCol" minWidth="0.0" prefWidth="137.0" text="Colour" />
+          <TableColumn fx:id="ownerCol" minWidth="0.0" prefWidth="137.0" text="Owner" />
+        </columns>
+      </TableView>
+      <Label fx:id="welcome" layoutX="227.0" layoutY="33.0" text="The Best Pets">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="97.0" text="Here are all the pets:" />
+   </children>
+</AnchorPane>
