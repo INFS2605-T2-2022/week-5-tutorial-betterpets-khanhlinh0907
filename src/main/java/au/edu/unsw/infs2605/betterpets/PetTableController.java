@@ -37,9 +37,13 @@ public class PetTableController {
         ObservableList<Pet> petsList = database.getPets();
         
         // Set this list into the TableView
+        petTbl.setItems(petsList);
         
         // Set all the columns in to tableview columns
-        
+        nameCol.setCellValueFactory(new PropertyValueFactory("name"));
+        speciesCol.setCellValueFactory(new PropertyValueFactory("species"));
+        colourCol.setCellValueFactory(new PropertyValueFactory("colour"));
+        ownerCol.setCellValueFactory(new PropertyValueFactory("owner"));
     }
     
 }

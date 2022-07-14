@@ -6,7 +6,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 /**
  *
@@ -19,6 +23,8 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException, SQLException {
         // TODO: Create and setup the database (use a method in Database.java!)
+        Database database = new Database();
+        //database.setupDatabase();
         
         stage.setTitle("Pets Finder");
         scene = new Scene(loadFXML("loginscreen"), 640, 480);
